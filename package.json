@@ -1,0 +1,22 @@
+{
+  "name": "actions-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Test GitHub Actions without pushing commits",
+  "scripts": {
+    "dev": "pnpm run --parallel dev",
+    "dev:frontend": "pnpm --filter frontend dev",
+    "dev:runner": "pnpm --filter runner dev",
+    "build": "pnpm run --parallel build",
+    "build:frontend": "pnpm --filter frontend build",
+    "lint": "pnpm run --parallel lint"
+  },
+  "keywords": ["github-actions", "ci-cd", "testing"],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.15.1"
+}
