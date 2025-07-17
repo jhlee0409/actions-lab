@@ -9,9 +9,15 @@
     "dev:runner": "pnpm --filter runner dev",
     "build": "pnpm run --parallel build",
     "build:frontend": "pnpm --filter frontend build",
-    "lint": "pnpm run --parallel lint"
+    "lint": "pnpm run --parallel lint",
+    "deploy:frontend": "cd frontend && vercel --prod",
+    "deploy:frontend:preview": "cd frontend && vercel"
   },
-  "keywords": ["github-actions", "ci-cd", "testing"],
+  "keywords": [
+    "github-actions",
+    "ci-cd",
+    "testing"
+  ],
   "author": "",
   "license": "MIT",
   "engines": {
